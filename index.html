@@ -195,7 +195,7 @@ async function buatAdmin(){const n=$('an').value.trim(),u=$('aun').value.trim().
 function setupFb(){document.querySelector('.lf').innerHTML='<form style="width:100%;max-width:340px" onsubmit="simpanFb();return false"><h2>Sambungkan database</h2><p class="mut">Tempel firebaseConfig dari Firebase Console (Project settings, Your apps). Cukup sekali di setiap perangkat.</p><textarea id="fc" style="width:100%;height:150px;margin-bottom:12px" required></textarea><button style="width:100%">Simpan</button></form>'}
 function simpanFb(){const o=Object.fromEntries([...$('fc').value.matchAll(/(\w+)\s*:\s*["']([^"']+)["']/g)].map(m=>[m[1],m[2]]));if(!o.apiKey||!o.projectId)return alert('Format config tidak valid.');localStorage.setItem('fbc',JSON.stringify(o));location.reload()}
 const FBC={
-  apiKey: "AIzaSyA6K1CJH08sG9536oAcObNv...", // ⚠️ GANTI DENGAN API KEY LENGKAP DARI FIREBASE CONSOLE ANDA
+  apiKey: "AIzaSyA6KICJH08sG9536oAcObNvFelyF4KSNlo", // ⚠️ GANTI DENGAN API KEY LENGKAP DARI FIREBASE CONSOLE ANDA
   authDomain: "loket-sampah-st.firebaseapp.com",
   projectId: "loket-sampah-st",
   storageBucket: "loket-sampah-st.firebasestorage.app",
